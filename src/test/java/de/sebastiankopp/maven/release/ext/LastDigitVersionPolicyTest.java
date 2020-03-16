@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class LastDigitNamingStrategyTest {
+public class LastDigitVersionPolicyTest {
 	
-	private final LastDigitNamingStrategy underTest = new LastDigitNamingStrategy();
+	private final LastDigitVersionPolicy underTest = new LastDigitVersionPolicy();
 	
 	@Test(dataProvider = "dp")
 	public void testGetReleaseVersion(String input, String expected, String _unused) {

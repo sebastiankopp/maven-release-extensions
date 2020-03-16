@@ -10,9 +10,9 @@ import static org.apache.commons.lang.StringUtils.removeEnd;
 
 @Component(hint = "last-digit", role = VersionPolicy.class,
 	description = "Always counts up the last 'number' within the version string")
-public class LastDigitNamingStrategy implements VersionPolicy {
+public class LastDigitVersionPolicy implements VersionPolicy {
 	
-	public static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
+	private static final String SUFFIX_SNAPSHOT = "-SNAPSHOT";
 	
 	@Override
 	public VersionPolicyResult getReleaseVersion(VersionPolicyRequest versionPolicyRequest) {
